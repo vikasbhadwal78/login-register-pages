@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas bhadwal</title>
+
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="index.js">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+
+</head>
+<!--------header------>
+<body>
+    <div id="header" style="background-image: url(/static/images/chintu1.png);">
+        <div class="container">
+             <nav>
+                <img src="/static/images/vglogo112.jpg" class="logo" alt="error" >
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home</a></li>
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#services"> Services</a></li>
+                    <li><a href="#portfolio"> Portfolio</a></li>
+
+                    <li><a href="#contact"> Contact</a></li>
+
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+             </nav>
+            </div>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <p>Web Designer</p>
+                <h1>Hi, I'm  <span>Vikas Bhadwal</span><br>From India</h1>
+            </div>
+
+
+
+    </div>
+    <!---------main about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/static/images/user.png" alt="re">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, commodi officiis numquam nam nobis neque accusantium tempora aliquid pariatur asperiores nulla ad corporis aperiam natus odio atque quis error, accusamus modi ipsum impedit. Deleniti maxime hic numquam, sunt optio molestias sapiente quidem quia ullam odit excepturi, atque quaerat sint earum?</p>
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"><ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                        <li><span>Web Development</span><br> Web/App Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul></div>
+                    <div class="tab-contents" id="experience"><ul>
+                        <li><span>2021-current</span><br>Data Anaylist</li>
+                        <li><span>2020-2021</span><br> Free Lancing</li>
+                        <li><span>2019-2020</span><br>Network Marketing</li>
+                    </ul></div>
+                    <div class="tab-contents" id="education"><ul>
+                        <li><span>2021-current</span><br>Learing- SQL,Machine Learning,Python Advance</li>
+                        <li><span>2021</span><br> BA(Honour English)</li>
+                        <li><span>2020</span><br> C++,Python</li>
+                        <li><span>2016</span><br>Complete Schooling</li>
+                    </ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----main services------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quam dolorem animi fugit ipsum corporis repudiandae rem, soluta voluptatem nisi? Magnam, unde nulla.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quam dolorem animi fugit ipsum corporis repudiandae rem, soluta voluptatem nisi? Magnam, unde nulla.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Data Anaylist</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quam dolorem animi fugit ipsum corporis repudiandae rem, soluta voluptatem nisi? Magnam, unde nulla.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------main portfolio------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-tittle">
+            My Work
+        </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/static/images/work-1.png" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store</p>
+                    <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/static/images/work-2.png" >
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store</p>
+                    <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/static/images/work-3.png" >
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store</p>
+                    <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!--------main contact---->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tittle">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i> vikasbhadwal78@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vikas.bhadwal.94"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/vikas_bhadwal"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/vikas_bhadwal724/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/alone-boy-016bba256/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <!----form---->
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!----footer---->
+    <div class="copyright">
+        <p>Copyright © <i class="fas fa-heart"></i> Vikas Bhadwal.</p>
+    </div>
+</div>
+<!-----javascript------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwm53WiuAV5A3YoN_kF3ZjQDToz05yFo--18ABGhLv6M7utn8d0htI7wSlyA2R2O4YlCg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
